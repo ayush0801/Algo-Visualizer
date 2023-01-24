@@ -32,7 +32,7 @@ Once you have the repository on your machine, you can navigate to the project di
 npm install
 ```
 
-:computer: Running the project
+## :computer: Running the project
 
 Once the dependencies are installed, you can start the project by running the following command:
 ```bash
@@ -53,7 +53,7 @@ This will start the development server and you should be able to access the webs
 The project is deployed on https://cosmic-moxie-05df0c.netlify.app/
 You can check the live demo of the project here.
 
-##:busts_in_silhouette: Contributing
+## :busts_in_silhouette: Contributing
 
 If you are interested in contributing to this project, please feel free to submit a pull request.
 
