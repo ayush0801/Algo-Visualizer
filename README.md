@@ -31,28 +31,6 @@ Once you have the repository on your machine, you can navigate to the project di
 ```bash
 npm install
 ```
-## # Algorithm Visualizer :mag:
-
-Algorithm Visualizer is a visually interactive way to understand and implement different algorithms. The website includes the following categories of algorithms:
-
-## :chart_with_upwards_trend: Sorting Algorithms
-- Bubble Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
-
-## :runner: Pathfinding Algorithms
-- Dijkstra
-- A* Search
-
-## :rocket: Getting Started
-
-You can check the live demo of the project :point_right: [here](https://cosmic-moxie-05df0c.netlify.app/) :point_left:
-
-Or you can clone the repository to your local machine. Once you have the repository on your machine, you can start by installing the dependencies by running the following command:
-```bash
-npm install
-```
 
 :computer: Running the project
 
