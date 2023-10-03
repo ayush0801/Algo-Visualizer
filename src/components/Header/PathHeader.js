@@ -46,6 +46,7 @@ const Pathheader = (props) => {
       >
         <MenuItem value="dijkstra">Dijkstra</MenuItem>
         <MenuItem value="a*">A*</MenuItem>
+        <MenuItem value="dfs">DFS</MenuItem>
       </Select>
       <Link className="flex" to="/">
         <p style={{ marginRight: 10 }}>Sorting Algorithms</p> {arrowForward}

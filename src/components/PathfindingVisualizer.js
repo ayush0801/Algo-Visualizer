@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import buttonStyles from "./ButtonStyle";
 import { connect } from "react-redux";
 import * as dijkstra from "../algorithms/pathfinding/dijkstra";
+import * as dfs from "../algorithms/pathfinding/dfs";
 import * as astar from "../algorithms/pathfinding/astar";
 
 import Header from "../components/Header/Header";
@@ -155,6 +156,20 @@ class PathfindingVisualizer extends Component {
   }
 
   // Call this function on button click
+  visualizeDfs() {
+    const { grid } = this.state;
+    const startNode = grid[START_NODE_ROW][START_NODE_COL];
+    const finishNode = grid[FINISH_NODE_ROW][FINISH_NODE_COL];
+    const visitedNodesInOrder = dfs.dfs(grid, startNode, finishNode);
+    const nodesInShortestPathOrder =
+      dfs.getNodesInShortestPathOrder(finishNode);
+    this.animatePathfindingAlgorithm(
+      visitedNodesInOrder,
+      nodesInShortestPathOrder
+    );
+  }
+
+  // Call this function on button click
   visualizeAstar() {
     const { grid } = this.state;
     const startNode = grid[START_NODE_ROW][START_NODE_COL];
@@ -176,6 +191,9 @@ class PathfindingVisualizer extends Component {
     switch (this.props.method) {
       case "dijkstra":
         this.visualizeDijkstra(this);
+        break;
+      case "dfs":
+        this.visualizeDfs(this);
         break;
       case "a*":
         this.visualizeAstar(this);

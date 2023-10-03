@@ -27,7 +27,21 @@ const pathData = [
     title: "A* Search",
     list: [
       "A* does exactly the same as Dijkstra’s algorithm, visiting each node and adding it to a priority queue, the only modification is that the node at the top of the priority queue is the node which has the shortest distance cost + the cost to the final node from that node.",
-      "In this way, the nodes the nodes that are far away from the target are penalised.",
+      "In this way, the nodes that are far away from the target are penalised.",
+    ],
+  },
+  {
+    title: "DFS Algorithm",
+    list: [
+      "Depth-First Search (DFS) is not typically used for finding the shortest path in a graph because it does not guarantee that it will find the shortest path.",
+      "It explores a graph by starting at an initial node and traversing as deeply as possible along each branch before backtracking.",
+    ],
+  },
+  {
+    title: "DFS Algorithm",
+    list: [
+      "It marks the current node as visited, appends it to the path, and checks if it's the target node.",
+      "If not, it recursively explores the neighbors of the current node.",
     ],
   },
 ];
