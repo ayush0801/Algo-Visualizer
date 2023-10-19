@@ -32,6 +32,22 @@ const sortData = [
       "Pivot is a centre point or the mid point",
     ],
   },
+  {
+    title: "Heap Sort",
+    list: [
+      "Heap sort is a comparison-based sorting technique based on Binary Heap data structure ",
+      "It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning ",
+      "Repeat the same process for the remaining elements",
+    ],
+  },
+  {
+    title: "Selection Sort",
+    list: [
+      "Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list ",
+      "The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part",
+      "This process is repeated for the remaining unsorted portion until the entire list is sorted",
+    ],
+  },
 ];
 
 export default sortData;
