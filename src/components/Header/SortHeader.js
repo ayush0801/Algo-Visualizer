@@ -68,9 +68,12 @@ const Sortheader = (props) => {
         <MenuItem value="bubble">Bubble Sort</MenuItem>
         <MenuItem value="insertion">Insertion Sort</MenuItem>
         <MenuItem value="quick">Quick Sort</MenuItem>
+        <MenuItem value="heap">Heap Sort</MenuItem>
+        <MenuItem value="selection">Selection Sort</MenuItem>
       </Select>
       <Link className="flex" to="/path-finding-algos">
-        <p style={{ marginRight: 10 }}>Path Finding Algorithms</p> {arrowForward}
+        <p style={{ marginRight: 10 }}>Path Finding Algorithms</p>{" "}
+        {arrowForward}
       </Link>
     </>
   );
